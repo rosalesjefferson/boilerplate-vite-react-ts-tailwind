@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="text-green-500">
+    <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, eum.
     </div>
   );

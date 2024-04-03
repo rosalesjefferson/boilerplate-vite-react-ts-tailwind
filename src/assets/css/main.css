@@ -1,3 +1,231 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    /* Primary / Brand 1 / Blue */
+    /* rgb( 215, 232, 255) */
+    --color-primary-50: #d7e8ff;
+    /* rgb( 179, 212, 254) */
+    --color-primary-100: #b3d4fe;
+    /* rgb( 103, 168, 254) */
+    --color-primary-200: #67a8fe;
+    /* rgb( 27, 125, 253) */
+    --color-primary-300: #1b7dfd;
+    /* rgb( 2, 89, 202) */
+    --color-primary-400: #0259ca;
+    /* rgb( 1, 55, 125) */
+    --color-primary-500: #01377d;
+    /* rgb( 1, 44, 101) */
+    --color-primary-600: #012c65;
+    /* rgb( 1, 33, 76) */
+    --color-primary-700: #01214c;
+    /* rgb( 0, 22, 51) */
+    --color-primary-800: #001633;
+    /* rgb( 0, 11, 25) */
+    --color-primary-900: #000b19;
+    /* rgb( 0, 4, 10) */
+    --color-primary-950: #00040a;
+
+    /* Secondary / Brand 2  / Lime*/
+    /* rgb( 243, 251, 239) */
+    --color-secondary-50: #f3fbef;
+    /* rgb( 229, 246, 218) */
+    --color-secondary-100: #e5f6da;
+    /* rgb( 203, 237, 181) */
+    --color-secondary-200: #cbedb5;
+    /* rgb( 176, 228, 144) */
+    --color-secondary-300: #b0e490;
+    /* rgb( 150, 219, 107) */
+    --color-secondary-400: #96db6b;
+    /* rgb( 126, 211, 72) */
+    --color-secondary-500: #7ed348;
+    /* rgb( 96, 181, 44) */
+    --color-secondary-600: #60b52c;
+    /* rgb( 72, 136, 33) */
+    --color-secondary-700: #488821;
+    /* rgb( 48, 90, 22) */
+    --color-secondary-800: #305a16;
+    /* rgb( 24, 45, 11) */
+    --color-secondary-900: #182d0b;
+    /* rgb( 13, 25, 6) */
+    --color-secondary-1000: #0d1906;
+
+    /* White */
+    /* rgb( 255, 255, 255) */
+    --color-white-50: #ffffff;
+    /* rgb( 253, 253, 254) */
+    --color-white-100: #fdfdfe;
+    /* rgb( 248, 249, 250) */
+    --color-white-200: #f8f9fa;
+    /* rgb( 239, 241, 244) */
+    --color-white-300: #eff1f4;
+    /* rgb( 227, 230, 235) */
+    --color-white-400: #e3e6eb;
+    /* rgb( 213, 217, 224) */
+    --color-white-500: #d5d9e0;
+    /* rgb( 195, 202, 212) */
+    --color-white-600: #c3cad4;
+    /* rgb( 176, 184, 198) */
+    --color-white-700: #b0b8c6;
+    /* rgb( 155, 165, 183) */
+    --color-white-800: #9ba5b7;
+    /* rgb( 132, 145, 167) */
+    --color-white-900: #8491a7;
+    /* rgb( 109, 125, 150) */
+    --color-white-950: #6d7d96;
+
+    /* Black */
+    /* rgb( 235, 235, 235)  */
+    --color-black-50: #ebebeb;
+    /* rgb( 214, 214, 214)  */
+    --color-black-100: #d6d6d6;
+    /* rgb( 173, 173, 173) */
+    --color-black-200: #adadad;
+    /* rgb( 133, 133, 133) */
+    --color-black-300: #858585;
+    /* rgb( 92, 92, 92) */
+    --color-black-400: #5c5c5c;
+    /* rgb( 51, 51, 51) */
+    --color-black-500: #333333;
+    /* rgb( 41, 41, 41) */
+    --color-black-600: #292929;
+    /* rgb( 31, 31, 31) */
+    --color-black-700: #1f1f1f;
+    /* rgb( 20, 20, 20) */
+    --color-black-800: #141414;
+    /* rgb( 10, 10, 10) */
+    --color-black-900: #0a0a0a;
+    /* rgb( 5, 5, 5)   */
+    --color-black-950: #050505;
+
+    /* Green / Success */
+    /* rgb( 240, 253, 244) */
+    --color-success-50: #f0fdf4;
+    /* rgb( 220, 252, 231) */
+    --color-success-100: #dcfce7;
+    /* rgb( 187, 247, 208) */
+    --color-success-200: #bbf7d0;
+    /* rgb( 134, 239, 172) */
+    --color-success-300: #86efac;
+    /* rgb( 74, 222, 128) */
+    --color-success-400: #4ade80;
+    /* rgb( 34, 197, 85) */
+    --color-success-500: #22c55e;
+    /* rgb( 22, 163, 74) */
+    --color-success-600: #16a34a;
+    /* rgb( 21, 128, 61) */
+    --color-success-700: #15803d;
+    /* rgb( 22, 101, 52) */
+    --color-success-800: #166534;
+    /* rgb( 20, 83, 45) */
+    --color-success-900: #14532d;
+    /* rgb( 5, 46, 22) */
+    --color-success-1000: #052e16;
+
+    /* Mix of Blue and violet */
+    /* rgb( 235, 238, 249) */
+    --color-blue-50: #ebeef9;
+    /* rgb( 212, 218, 242) */
+    --color-blue-100: #d4daf2;
+    /* rgb( 169, 181, 229) */
+    --color-blue-200: #a9b5e5;
+    /* rgb( 130, 147, 217) */
+    --color-blue-300: #8293d9;
+    /* rgb( 87, 110, 203) */
+    --color-blue-400: #576ecb;
+    /* rgb( 55, 80, 179) */
+    --color-blue-500: #3750b3;
+    /* rgb( 44, 64, 144) */
+    --color-blue-600: #2c4090;
+    /* rgb( 34, 49, 109) */
+    --color-blue-700: #22316d;
+    /* rgb( 22, 31, 70) */
+    --color-blue-800: #161f46;
+    /* rgb( 11, 16, 35) */
+    --color-blue-900: #0b1023;
+    /* rgb( 6, 9, 20) */
+    --color-blue-950: #060914;
+
+    /* Yellow to Orange */
+    /* rgb( 255, 251, 235)  */
+    --color-yellow-50: #fffbeb;
+    /* rgb( 254, 243, 199)  */
+    --color-yellow-100: #fef3c7;
+    /* rgb( 253, 230, 138) */
+    --color-yellow-200: #fde68a;
+    /* rgb( 252, 211, 77) */
+    --color-yellow-300: #fcd34d;
+    /* rgb( 251, 191, 36) */
+    --color-yellow-400: #fbbf24;
+    /* rgb( 245, 158, 11) */
+    --color-yellow-500: #f59e0b;
+    /* rgb( 217, 119, 6) */
+    --color-yellow-600: #d97706;
+    /* rgb( 180, 83, 9) */
+    --color-yellow-700: #b45309;
+    /* rgb( 146, 64, 14) */
+    --color-yellow-800: #92400e;
+    /* rgb( 120, 53, 15) */
+    --color-yellow-900: #78350f;
+    /* rgb( 69, 26, 3)  */
+    --color-yellow-950: #451a03;
+
+    /* Orange custom */
+    /* rgb( 255, 244, 238) */
+    --color-orange-50: #ffecdc;
+    /* rgb( 255, 218, 202) */
+    --color-orange-100: #ffdac9;
+    /* rgb( 253, 191, 164) */
+    --color-orange-200: #fdbfa4;
+    /* rgb( 255, 158, 114) */
+    --color-orange-300: #ff9e72;
+    /* rgb( 235, 124, 71) */
+    --color-orange-400: #eb7c47;
+    /* rgb( 222, 103, 40) */
+    --color-orange-500: #de6728;
+    /* rgb( 208, 73, 0) */
+    --color-orange-600: #d04900;
+    /* rgb( 170, 76, 26) */
+    --color-orange-700: #aa4c1a;
+    /* rgb( 144, 58, 3) */
+    --color-orange-800: #903a03;
+    /* rgb( 127, 49, 0) */
+    --color-orange-900: #7f3100;
+    /* rgb( 114, 44, 0) */
+    --color-orange-950: #722c00;
+    /* rgb( 106, 39, 0) */
+    --color-orange-1000: #6a2700;
+
+    /* Red */
+    /* rgb( 254, 242, 242) */
+    --color-red-50: #fef2f2;
+    /* rgb( 254, 226, 226) */
+    --color-red-100: #fee2e2;
+    /* rgb( 254, 202, 202) */
+    --color-red-200: #fecaca;
+    /* rgb( 252, 165, 165) */
+    --color-red-300: #fca5a5;
+    /* rgb( 248, 113, 113) */
+    --color-red-400: #f87171;
+    /* rgb( 239, 68, 68) */
+    --color-red-500: #ef4444;
+    /* rgb( 220, 38, 38) */
+    --color-red-600: #dc2626;
+    /* rgb( 185, 28, 28) */
+    --color-red-700: #b91c1c;
+    /* rgb( 153, 27, 27) */
+    --color-red-800: #991b1b;
+    /* rgb( 127, 29, 29) */
+    --color-red-900: #7f1d1d;
+    /* rgb( 69, 10, 10) */
+    --color-red-950: #450a0a;
+  }
+
+  html {
+    color: var(--color-secondary-950);
+    background: var(--color-blue-50);
+    /* font-family: 'Inter', sans-serif; */
+  }
+}
