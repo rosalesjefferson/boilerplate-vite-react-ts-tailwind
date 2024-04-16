@@ -165,13 +165,14 @@ module.exports = {
           },
         ],
       },
-      plugins: [
-        require('@tailwindcss/forms')({
-          strategy: "class", // only generate classes
-        }),
-        require("@tailwindcss/typography"),
-        require("@tailwindcss/line-clamp"),
-      ]
+      
     },
   },
+  plugins: [
+    require('@tailwindcss/forms')({
+      strategy: "class", // only generate classes
+    }),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/line-clamp"),
+  ]
 };
